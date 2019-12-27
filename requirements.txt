@@ -49,7 +49,6 @@ PyHamcrest==1.9.0
 PyJWT==1.7.1
 pymongo==3.9.0
 pyOpenSSL==19.0.0
-pypiwin32==223
 PySocks==1.7.0
 python-dateutil==2.7.5
 pyttsx3==2.71

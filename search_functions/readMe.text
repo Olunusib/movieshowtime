@@ -1,0 +1,17 @@
+required depencies:
+
+    - scarpy
+    - IMDbPY
+
+Those three script that im yet to put into one programme, scrapes movie data from the everyman cinema in King Cross
+and return all film titles and screening times and saves in a json file. This is done by the EveryManSpider.py.
+Then the second script, proccesMovieData.py takes the json files which is a list of dictionaries processes it to make 
+a new nested dictionary which holds movie titles as keys and nested dicts of metadata names as keys, as value. As it 
+iterates over the dicts and adds them to the final stracture it uses the IMDb api to collect metadata about each movie
+title and saves it in the nested dict for each movie title using the metadata name as key (e.g {'movie title' : {'rating' : 7, 
+                                                                                                'directors' : 'J.J. Abrams', 
+                                                                                                    ....}})
+
+For those intrested testing the data proccesing script with out running the spider, you can use the movies.json file when running 
+the oriccessMovieData.py and you can see the data stracture for the final product in moviesDict.json and of course, use this file 
+to test findMovie.py

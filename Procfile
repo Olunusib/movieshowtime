@@ -1,1 +1,1 @@
-web: gunicorn fetchfromcraig.wsgi
+web: gunicorn movieshowtime.wsgi

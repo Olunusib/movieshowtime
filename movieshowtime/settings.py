@@ -21,12 +21,12 @@ TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'mz*luk*z%#wp9vhds#3+()es!ja)6szkx-7deoh#$@zq4%3f+_'
+SECRET_KEY = os.environ.get('KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['moviesshowtimes.herokuapp.com']
 
 
 # Application definition
@@ -88,9 +88,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'djongo',
         'NAME': 'Movies',
-        'HOST': 'mongodb+srv://Olunusib:Olwatola77@moviedatabase-tc6y4.mongodb.net/test?retryWrites=true&w=majority',
-        'USER': 'Olunusib',
-        'PASSWORD':'Oluwatola77',
+        'HOST': os.environ.get('HOST'),
+        'USER': os.environ.get('USER'),
+        'PASSWORD': os.environ.get('PASSWORD'),
     }
 }
 

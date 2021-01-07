@@ -27,7 +27,7 @@ idna==2.8
 IMDbPY==6.8
 incremental==17.5.0
 jsonfield==2.0.2
-lxml==4.4.2
+lxml==4.6.2
 mathparse==0.1.2
 murmurhash==1.0.2
 nltk==3.4.5
